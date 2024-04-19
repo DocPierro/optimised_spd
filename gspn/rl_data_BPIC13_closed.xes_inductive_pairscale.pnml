@@ -1,0 +1,238 @@
+<pnml>
+  <net id="imdf_net_1713254269.9040484" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1713254269.9040484</text>
+    </name>
+    <page id="n0">
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      </place>
+      <place id="p1">
+        <name>
+          <text>p1</text>
+        </name>
+      </place>
+      <place id="p2">
+        <name>
+          <text>p2</text>
+        </name>
+      </place>
+      <place id="p3">
+        <name>
+          <text>p3</text>
+        </name>
+      </place>
+      <place id="p4">
+        <name>
+          <text>p4</text>
+        </name>
+      </place>
+      <place id="p5">
+        <name>
+          <text>p5</text>
+        </name>
+      </place>
+      <place id="p6">
+        <name>
+          <text>p6</text>
+        </name>
+      </place>
+      <place id="start">
+        <name>
+          <text>start</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="p8">
+        <name>
+          <text>p8</text>
+        </name>
+      </place>
+      <place id="p9">
+        <name>
+          <text>p9</text>
+        </name>
+      </place>
+      <place id="p10">
+        <name>
+          <text>p10</text>
+        </name>
+      </place>
+      <place id="p11">
+        <name>
+          <text>p11</text>
+        </name>
+      </place>
+      <place id="p12">
+        <name>
+          <text>p12</text>
+        </name>
+      </place>
+      <place id="p13">
+        <name>
+          <text>p13</text>
+        </name>
+      </place>
+      <place id="p14">
+        <name>
+          <text>p14</text>
+        </name>
+      </place>
+      <place id="p15">
+        <name>
+          <text>p15</text>
+        </name>
+      </place>
+      <transition id="t0">
+        <name>
+          <text>t0</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t1">
+        <name>
+          <text>t1</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t2">
+        <name>
+          <text>t2</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t3">
+        <name>
+          <text>t3</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t4">
+        <name>
+          <text>t4</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t5">
+        <name>
+          <text>t5</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t6">
+        <name>
+          <text>t6</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t7">
+        <name>
+          <text>t7</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t8">
+        <name>
+          <text>t8</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t9">
+        <name>
+          <text>t9</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t10">
+        <name>
+          <text>t10</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t11">
+        <name>
+          <text>t11</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t12">
+        <name>
+          <text>Unmatched</text>
+        </name>
+      <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">0.002852852852852853</property><property key="invisible">false</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t13">
+        <name>
+          <text>t13</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t14">
+        <name>
+          <text>Completed</text>
+        </name>
+      <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">4.245045045045045</property><property key="invisible">false</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t15">
+        <name>
+          <text>Accepted</text>
+        </name>
+      <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">4.085285285285285</property><property key="invisible">false</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t16">
+        <name>
+          <text>t16</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t17">
+        <name>
+          <text>Queued</text>
+        </name>
+      <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">0.1512012012012012</property><property key="invisible">false</property><property key="priority">1</property></toolspecific></transition>
+      <transition id="t18">
+        <name>
+          <text>t18</text>
+        </name>
+        <toolspecific tool="StochasticPetriNet" version="0.2"><property key="distributionType">IMMEDIATE</property><property key="weight">1</property><property key="invisible">true</property><property key="priority">1</property></toolspecific></transition>
+      <arc id="139813030205952" source="p11" target="t2" />
+      <arc id="139813847409280" source="p9" target="t3" />
+      <arc id="139813847410432" source="p12" target="t4" />
+      <arc id="139813847411584" source="p14" target="t5" />
+      <arc id="139813847411968" source="p14" target="t6" />
+      <arc id="139813847412352" source="p6" target="t17" />
+      <arc id="139813847286400" source="t10" target="p4" />
+      <arc id="139813030205712" source="p8" target="t13" />
+      <arc id="139813847410192" source="p3" target="t0" />
+      <arc id="139813847411344" source="p4" target="t1" />
+      <arc id="139813847286832" source="p10" target="t1" />
+      <arc id="139813847287648" source="t7" target="p5" />
+      <arc id="139813030075552" source="start" target="t16" />
+      <arc id="139813030206240" source="p11" target="t8" />
+      <arc id="139813847410720" source="p12" target="t9" />
+      <arc id="139813847286304" source="p1" target="t10" />
+      <arc id="139813847287072" source="p15" target="t11" />
+      <arc id="139813847287456" source="t12" target="p10" />
+      <arc id="139813847287840" source="t8" target="p13" />
+      <arc id="139813847288032" source="t3" target="p13" />
+      <arc id="139813847288224" source="p9" target="t0" />
+      <arc id="139813847287168" source="t11" target="p10" />
+      <arc id="139813030084272" source="p5" target="t14" />
+      <arc id="139813030204080" source="p2" target="t7" />
+      <arc id="139813847408944" source="t15" target="p9" />
+      <arc id="139813847287552" source="t16" target="p11" />
+      <arc id="139813847412544" source="t17" target="p1" />
+      <arc id="139813847411008" source="t16" target="p5" />
+      <arc id="139813847287744" source="t18" target="p6" />
+      <arc id="139813847287936" source="t13" target="sink" />
+      <arc id="139813847288128" source="p2" target="t13" />
+      <arc id="139813847410000" source="t8" target="p12" />
+      <arc id="139813847411152" source="t9" target="p14" />
+      <arc id="139813847285968" source="p1" target="t18" />
+      <arc id="139813030203744" source="t14" target="p2" />
+      <arc id="139813030206048" source="t2" target="p8" />
+      <arc id="139813030206432" source="t0" target="p8" />
+      <arc id="139813847410528" source="t4" target="p3" />
+      <arc id="139813847410912" source="t1" target="p3" />
+      <arc id="139813847411680" source="t5" target="p4" />
+      <arc id="139813847412064" source="t6" target="p6" />
+      <arc id="139813847287264" source="p15" target="t12" />
+      <arc id="139813847408752" source="p13" target="t15" />
+      <arc id="139813847286640" source="t9" target="p15" />
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

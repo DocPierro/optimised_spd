@@ -1,0 +1,151 @@
+##### rl_data/BPIC13_closed.xes with inductive #####
+parsing log, completed traces :: 100%|██████████| 1487/1487 [00:00<00:00, 2332.60it/s]
+Event log has 183 traces and 4 unique activities.
+Petri net has 16 places and 19 transitions.
+Reachability graph has 46 states and 176 transitions.
+Unfolding time: 0.18340516090393066 seconds.
+loglh computation time: 0.00028705596923828125 seconds.
+emd computation time: 0.0962362289428711 seconds.
+
+Minimize lohlh | method: L-BFGS-B | nw0: 10 | step: 1 | maxiter: 50 | minw: 0.001 | maxw: 1 | improvement_threshold: 0.001
+	Best starting loglh value: 7.542254588665254
+	Best starting emd value: 0.5616198450123434
+	#############################################
+	loglh value at step 1 : 5.126510655249892 (0.4712257704841552)
+	emd value at step 1 : 0.3141274427890286
+	loglh value at step 2 : 4.448373065598523 (0.15244620441026938)
+	emd value at step 2 : 0.24578133758000048
+	loglh value at step 3 : 4.051052081286328 (0.09807846859032084)
+	emd value at step 3 : 0.1429574840365717
+	loglh value at step 4 : 4.049421215488251 (0.0004027404686475951)
+	emd value at step 4 : 0.1437675880295435
+	#############################################
+	loglh value with optimized values: 4.049421215488251
+	emd value with optimized values: 0.1437675880295435
+	Execution time: 36.586968183517456 seconds
+	emsc: 0.8782508584449811 in 138608 milliseconds
+	
+Minimize emd | method: Powell | nw0: 10 | step: 1 | maxiter: 50 | minw: 0.001 | maxw: 1 | improvement_threshold: 0.001
+	Best starting emd value: 0.32575218449811466
+	Best starting loglh value: 9.43738187617414
+	#############################################
+	emd value at step 1 : 0.06806634208520002 (3.7858041804327325)
+	loglh value at step 1 : 4.349262751751677
+	emd value at step 2 : 0.04563368716057144 (0.49158102972689244)
+	loglh value at step 2 : 4.817601524236155
+	emd value at step 3 : 0.04491524949125715 (0.01599540640321128)
+	loglh value at step 3 : 4.8927467011804895
+	emd value at step 4 : 0.0441400520830289 (0.017562222327469755)
+	loglh value at step 4 : 5.0813487284482655
+	emd value at step 5 : 0.04354162157434362 (0.01374387280601197)
+	loglh value at step 5 : 5.138281788354293
+	emd value at step 6 : 0.04329660417640046 (0.005659044227692771)
+	loglh value at step 6 : 5.187101303344929
+	emd value at step 7 : 0.04309476665897166 (0.004683573739382997)
+	loglh value at step 7 : 5.157099228570184
+	emd value at step 8 : 0.043053067336628795 (0.0009685563636342777)
+	loglh value at step 8 : 5.167687318214815
+	#############################################
+	emd value with optimized values: 0.043053067336628795
+	loglh value with optimized values: 5.167687318214815
+	Execution time: 603.1186258792877 seconds
+	
+Minimize lohlh | method: L-BFGS-B | nw0: 1 | step: 1 | maxiter: 10 | minw: 0.001 | maxw: 1 | improvement_threshold: 0
+	Best starting loglh value: 12.987222893813243
+	Best starting emd value: 0.6867695186007458
+	#############################################
+	loglh value at step 1 : 3.9826427722957227 (2.260956012463802)
+	emd value at step 1 : 0.06845323522325784
+	loglh value at step 2 : 3.9432686793248553 (0.009985140798878783)
+	emd value at step 2 : 0.06223485830697166
+	loglh value at step 3 : 3.7550719118241442 (0.05011801955326297)
+	emd value at step 3 : 0.06152914673274354
+	loglh value at step 4 : 3.7272172450139425 (0.0074733145344463466)
+	emd value at step 4 : 0.06192733329817229
+	loglh value at step 5 : 3.7271846393554644 (8.74806633773506e-06)
+	emd value at step 5 : 0.061968219576571754
+	loglh value at step 6 : 3.7253810423535554 (0.0004841375905992086)
+	emd value at step 6 : 0.062340800717715146
+	loglh value at step 7 : 3.723120815277143 (0.0006070786279988724)
+	emd value at step 7 : 0.06314951791091515
+	loglh value at step 8 : 3.720960277350923 (0.0005806398792728074)
+	emd value at step 8 : 0.06319754290411471
+	loglh value at step 9 : 3.7205362303295657 (0.00011397470555465337)
+	emd value at step 9 : 0.06407869422771544
+	loglh value at step 10 : 3.7181520304409563 (0.0006412324910572924)
+	emd value at step 10 : 0.06484594405725737
+	#############################################
+	loglh value with optimized values: 3.7181520304409563
+	emd value with optimized values: 0.06484594405725737
+	Execution time: 94.42193579673767 seconds
+	
+Minimize emd | method: Powell | nw0: 1 | step: 1 | maxiter: 10 | minw: 0.001 | maxw: 1 | improvement_threshold: 0
+	Best starting emd value: 0.6181407053355435
+	Best starting loglh value: 8.475633575696373
+	#############################################
+	emd value at step 1 : 0.12371600498308592 (3.9964489672945214)
+	loglh value at step 1 : 4.971700505207319
+	emd value at step 2 : 0.09362848342668637 (0.32135008979354984)
+	loglh value at step 2 : 4.838845714963879
+	emd value at step 3 : 0.08805515847771452 (0.06329356559368839)
+	loglh value at step 3 : 5.164570469236873
+	emd value at step 4 : 0.08087586769011453 (0.08876925827996422)
+	loglh value at step 4 : 5.1703285279626465
+	emd value at step 5 : 0.07658084508537165 (0.056084815987011157)
+	loglh value at step 5 : 5.3640687958649504
+	emd value at step 6 : 0.07427930052154426 (0.030985005885453124)
+	loglh value at step 6 : 5.479314883225425
+	emd value at step 7 : 0.07340899188537175 (0.011855613513007943)
+	loglh value at step 7 : 5.5227818957284995
+	emd value at step 8 : 0.07285407980588594 (0.00761676052960015)
+	loglh value at step 8 : 5.644390305943705
+	emd value at step 9 : 0.07231173697851476 (0.007500066379712707)
+	loglh value at step 9 : 5.838055799813573
+	emd value at step 10 : 0.07175061366537153 (0.007820467093984467)
+	loglh value at step 10 : 5.840733700707709
+	#############################################
+	emd value with optimized values: 0.07175061366537153
+	loglh value with optimized values: 5.840733700707709
+	Execution time: 733.7001025676727 seconds
+
+frequency estimator:
+	loglh: 32.60618242374296
+	emd: 0.6898681469935433
+lhpair estimator:
+	loglh: 33.98031198981207
+	emd: 0.6899010636641717
+rhpair estimator:
+	loglh: 33.98031198981207
+	emd: 0.6899010636641717
+pairscale estimator:
+	loglh: 13.087558986084598
+	emd: 0.6600909283693147
+fork estimator:
+	loglh: 9.848762290535866
+	emd: 0.6329238404023437
+	
+RSD:
+	##################################################
+	Start plug-in Mine stochastic Petri net from log
+	Gradient descent converged: false after 1000001 iterations.
+	Cost: NaN for vector [1.89484602988645E-128, 1.89484602988645E-128, 0.04271238829497244, 0.0, 0.3826822108877307, 0.11008678217535152, 0.1393069710109264, 0.10811886079378999, 0.011049813620089088, 0.976936132144233, 0.12985575983317857, 0.036579924984650763, 0.48287833222954957, 0.7625456232930478, 13.810520426829182, 1.89484602988645E-128, 0.006726773903301052]
+	End plug-in Mine stochastic Petri net from log, took 12516 milliseconds
+	##################################################
+	Start plug-in Compute Earth-movers' stochastic conformance (log-model)
+	Create stochastic language A..
+	 size: 183
+	Create stochastic language B..
+	 size: 54
+	Compute reallocation matrix..
+	Create distance matrix..
+	Create solver..
+	Solve..
+	Create reallocation matrix..
+	Create stochastic trace alignments..
+	EMSC done..
+	End plug-in Compute Earth-movers' stochastic conformance (log-model), took 4641 milliseconds
+	##################################################
+	EMSC: 0.3329950310416867
+	Where 1 is stochastical-language equivalent, and 0 is having not a single event in common.
+	##################################################
+
