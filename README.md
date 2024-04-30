@@ -51,7 +51,7 @@ Using the ***main.py*** script:
 &emsp; c. Alpha miner:<br/>
 &emsp; &emsp; `pn = ev.discover_pn_alpha()`<br/>
 3. Specify the optimization parameters:<br/>
-&emsp; ***method***: Specify the method used for minimization (***L-BFGS-B*** or ***Pöwell***).<br/>
+&emsp; ***method***: Specify the method used for minimization (***L-BFGS-B*** or ***Powell***).<br/>
 &emsp; ***nw0***: Specify the number of randomly chosen weight vectors considered as a starting point for minimization.<br/>
 &emsp; ***step***: Specify the number of iterations of the minimization process in which we control the improvement of the weight vector.<br/>
 &emsp; ***maxiter***: Specify the maximum number of iterations in the minimization process.<br/>
@@ -69,4 +69,4 @@ Using the ***main.py*** script:
 
 ## Contact
 
-For any inquiries or assistance, please contact pierre.cry@centralesupelec.com
+For any inquiries or assistance, please contact pierre.cry@centralesupelec.fr
