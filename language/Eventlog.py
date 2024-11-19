@@ -1,5 +1,7 @@
 import pm4py
 import xml.etree.ElementTree as ET
+
+import sympy
 from pm4py.statistics.variants.log import get as variants_module
 
 from model.Petrinet import Petrinet, Place, Transition, InArc, OutArc
@@ -29,13 +31,14 @@ class Event:
 
 class Trace:
 
-    def __init__(self, id, seq, word, freq, prob, mapping):
+    def __init__(self, id, seq, word, freq, prob, mapping1, mapping3):
         self.id = id
         self.seq = seq
         self.word = word
         self.freq = freq
         self.prob = prob
-        self.mapping = mapping
+        self.mapping1 = mapping1
+        self.mapping3 = mapping3
 
     def get_id(self):
         return self.id
@@ -52,11 +55,20 @@ class Trace:
     def get_prob(self):
         return self.prob
 
-    def map(self):
-        return self.mapping
+    def get_mapping1(self):
+        return self.mapping1
+
+    def get_mapping3(self):
+        return self.mapping3
+
+    def map1(self, mapping1):
+        self.mapping1 = mapping1
+
+    def map3(self, mapping3):
+        self.mapping3 = mapping3
 
     def __str__(self):
-        return "(" + str(self.id) + ",<" + str(self.word) + ">," + str(self.freq) + "," + str(self.prob) + "," + str(self.mapping) + ")"
+        return "(" + str(self.id) + ",<" + str(self.word) + ">," + str(self.freq) + "," + str(self.prob) + "," + str(self.mapping1) + "," + str(self.mapping3) + ")"
 
     def __repr__(self):
         return self.__str__()
@@ -73,21 +85,36 @@ class Eventlog:
         self.language, i = [], 0
         self.language_pm4py = variants_module.get_language(self.log)
         if "case:frequency" in self.log:
-            #frequencies = pm4py.get_event_attribute_values(self.log, "case:frequency")
             frequencies = [int(trace.find("int").attrib["value"]) for trace in ET.parse(filename).getroot().findall("trace")]
             for i, seq in enumerate(self.language_pm4py):
-                trace_mapping = 0
-                for c, activity in enumerate(seq):
-                    trace_mapping += self.activities[activity] * pow(len(self.activities), c)
-                self.language.append(Trace(i, seq, "".join(seq), int(frequencies[i]), int(frequencies[i])/sum(frequencies), trace_mapping))
+                self.language.append(Trace(i, seq, "".join(seq), int(frequencies[i]), int(frequencies[i])/sum(frequencies), -1, -1))
         else:
             cases = pm4py.get_event_attribute_values(self.log, "case:concept:name")
             for i, seq in enumerate(self.language_pm4py):
-                trace_mapping = 0
-                for c, activity in enumerate(seq):
-                    trace_mapping += self.activities[activity] * pow(len(self.activities), c)
-                self.language.append(Trace(i, seq, "".join(seq), self.language_pm4py[seq]*len(cases), self.language_pm4py[seq], trace_mapping))
-        self.language.append(Trace(len(self.language), (), "", 0, 0, -1))
+                self.language.append(Trace(i, seq, "".join(seq), self.language_pm4py[seq]*len(cases), self.language_pm4py[seq], -1, -1))
+
+        self.max_activities = self.build_max_activities()
+        self.prefixes = self.build_prefix_set()
+
+        for trace in self.language:
+            trace_mapping1 = 0
+            for c, activity in enumerate(trace.get_seq()):
+                trace_mapping1 += self.activities[activity] * pow(len(self.activities), c)
+            trace.map1(trace_mapping1)
+
+        p, primes = 0, list(sympy.primerange(len(self.language), 1000000))
+        while p <= len(primes):
+            mappings3 = []
+            for trace in self.language:
+                trace_mapping3 = 0
+                for c, activity in enumerate(trace.get_seq()):
+                    trace_mapping3 = (trace_mapping3 * len(self.activities) + self.activities[activity]) % primes[p]
+                mappings3.append(trace_mapping3)
+                trace.map3(trace_mapping3)
+            if len(mappings3) == len(set(mappings3)):
+                self.modulo = primes[p]
+                break
+            p += 100
 
     def get_log(self):
         return self.log
@@ -95,11 +122,17 @@ class Eventlog:
     def get_activities(self):
         return self.activities
 
-    def get_language_pm4py(self):
-        return self.language_pm4py
+    def get_max_activities(self):
+        return self.max_activities
+
+    def get_prefixes(self):
+        return self.prefixes
 
     def get_language(self):
         return self.language
+
+    def get_language_pm4py(self):
+        return self.language_pm4py
 
     def __str__(self):
         result = "["
@@ -314,9 +347,7 @@ class Eventlog:
                     prefixes.add(tuple(prefix))
         return prefixes
 
-    ####################################################################################################
-
-    def get_max_activities(self):
+    def build_max_activities(self):
         max_activities = dict(zip(self.activities, [0 for _ in range(len(self.activities))]))
         for trace in self.language:
             for activity in self.activities:
@@ -325,15 +356,16 @@ class Eventlog:
                     max_activities[activity] = count
         return max_activities
 
-    def gen_lha(self, pn):
+    ####################################################################################################
+
+    def gen_lha_m1(self, pn):
 
         activities = self.get_activities()
-        max_activities = self.get_max_activities()
 
         lha = "\n"
 
         # NbVariables
-        lha += "NbVariables = " + str(3 + len([transition.get_name() for transition in pn.get_transitions()
+        lha += "NbVariables = " + str(4 + len([transition.get_name() for transition in pn.get_transitions()
                                                if transition.label is not None])) + ";\n"
         # NbLocations
         lha += "NbLocations = 3;\n\n"
@@ -342,7 +374,7 @@ class Eventlog:
         lha += "const int n = " + str(len(activities)) + ";\n\n"
 
         # VariablesList
-        lha += "VariablesList = {word,c,id"
+        lha += "VariablesList = {id,word,cpt,c"
         for transition in pn.get_transitions():
             if transition.get_label() is not None:
                 lha += ",c_" + str(transition.get_name())
@@ -361,8 +393,9 @@ class Eventlog:
         # Locations
         lha += "Locations = {(li,TRUE);(lfa,(end=1));(lfr,TRUE);};\n\n"
 
-        # Edges
         lha += "Edges = {\n"
+
+        # Net edges
         for transition in pn.get_transitions():
             if not transition.is_silent():
                 lha += "((li,li),{" + str(transition.get_name()) + "},#,{word=word+" + str(
@@ -376,15 +409,84 @@ class Eventlog:
             lha = lha[:-1] + "},#,#);\n"
 
         # Accepting Edges
-        for trace in self.language[:-1]:
-            lha += "((li,lfa),#,word=" + str(trace.map()) + ",{id=" + str(trace.get_id()) + "});\n"
-        lha += "((li,lfa),#,#,{id=" + str(len(self.language) - 1) + "});\n"
+        for trace in self.language:
+            lha += "((li,lfa),#,word=" + str(trace.get_mapping1()) + ",{id=" + str(trace.get_id()) + "});\n"
 
         # Rejecting Edges
+        lha += "((li,lfr),#,cpt>=" + str(max([len(trace.get_seq()) for trace in self.language])) + ",#);\n"
         for transition in pn.get_transitions():
             if not transition.is_silent():
-                lha += ("((li,lfr),#,c_" + str(transition.get_name()) + ">=" +
-                        str(max_activities[transition.get_label()] + 1) + ",#);\n")
+                lha += "((li,lfr),#,c_" + str(transition.get_name()) + ">=" + str(
+                    self.max_activities[transition.get_label()] + 1) + ",#);\n"
+
+        lha += "};\n"
+        return lha
+
+    def gen_lha_m3(self, pn):
+
+        activities = self.get_activities()
+
+        lha = "\n"
+
+        # NbVariables
+        lha += "NbVariables = " + str(5 + len([transition.get_name() for transition in pn.get_transitions()
+                                               if transition.label is not None])) + ";\n"
+        # NbLocations
+        lha += "NbLocations = 4;\n\n"
+
+        # Const
+        lha += "const int n = " + str(len(activities)) + ";\n"
+        lha += "const int modulo = " + str(self.modulo) + ";\n\n"
+
+        # VariablesList
+        lha += "VariablesList = {id,word,cpt,temp,quotient"
+        for transition in pn.get_transitions():
+            if transition.get_label() is not None:
+                lha += ",c_" + str(transition.get_name())
+        lha += "};\n"
+        # LocationsList
+        lha += "LocationsList = {li,lmod,lfa,lfr};\n\n"
+
+        # Variables
+        lha += "PDF(Last(id), 1, 0, " + str(len(self.language)) + ");\n\n"
+
+        # InitialLocations
+        lha += "InitialLocations = {li};\n"
+        # FinalLocations
+        lha += "FinalLocations = {lfa};\n\n"
+
+        # Locations
+        lha += "Locations = {(li,TRUE);(lmod,TRUE);(lfa,(end=1));(lfr,TRUE);};\n\n"
+
+        lha += "Edges = {\n"
+
+        # Modulo Edges
+        lha += "((lmod,lmod),#,temp>=modulo,{temp=temp-modulo, quotient=quotient+1});\n"
+        lha += "((lmod,li),#,temp<=modulo-1,{word=word-(quotient*modulo)});\n"
+
+        # Net edges
+        for transition in pn.get_transitions():
+            # map 1
+
+            # map 3
+            if not transition.is_silent():
+                lha += "((li,lmod),{" + str(transition.get_name()) + "},#,{word=word*n+" + str(activities[transition.label]) + ", temp=word*n+" + str(activities[transition.label]) + ", quotient=0, cpt=cpt+1, c_" + str(transition.get_name()) + "=c_" + str(transition.get_name()) + "+1});\n"
+        if len(pn.get_transitions()) != len(activities):
+            lha += "((li,li),{"
+            for transition in pn.get_transitions():
+                if transition.is_silent():
+                    lha += str(transition.get_name()) + ","
+            lha = lha[:-1] + "},#,#);\n"
+
+        # Accepting Edges
+        for trace in self.language:
+            lha += "((li,lfa),#,word=" + str(trace.get_mapping3()) + ",{id=" + str(trace.get_id()) + "});\n"
+
+        # Rejecting Edges
+        lha += "((li,lfr),#,cpt>=" + str(max([len(trace.get_seq()) for trace in self.language])) + ",#);\n"
+        for transition in pn.get_transitions():
+            if not transition.is_silent():
+                lha += "((li,lfr),#,c_" + str(transition.get_name()) + ">=" + str(self.max_activities[transition.get_label()] + 1) + ",#);\n"
 
         lha += "};\n"
         return lha

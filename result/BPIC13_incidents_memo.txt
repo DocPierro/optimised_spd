@@ -1,0 +1,142 @@
+/usr/bin/python3.9 /home/pierre/Documents/Travail/pm4pierro/main.py 
+parsing log, completed traces :: 100%|██████████| 7554/7554 [00:02<00:00, 2524.43it/s]
+OPT-based SPD | method: L-BFGS-B | nw0: 100 | maxiter: inf
+
+####################################################################################################
+Unfolding started at 1.5974044799804688e-05 seconds
+Unfolding ended at 26.0710768699646 seconds
+####################################################################################################
+
+####################################################################################################
+Looking for starting points (100 vectors) started at 26.07110357284546 seconds
+Looking for starting points (100 vectors) ended at 493.20108938217163 seconds
+####################################################################################################
+
+####################################################################################################
+Optimising vectors started at 493.20110869407654 seconds
+ 0// loglh / rEMD value with starting values: 12.420011815226667 / 0.474455743351002
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 8.575500975503564 / 0.23265487793100129 in 30651.12   seconds (280  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 8.57551074302495 / 0.2326482163320004 in 2153.22    seconds (186  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 8.575534993253823 / 0.23266667459400395 in 2647.52    seconds (168  iterations)
+Optimising vectors ended at 36426.83246541023 seconds
+####################################################################################################
+
+Execution time: 36426.832493543625 seconds
+
+[True]
+
+Process finished with exit code 0
+
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+
+/usr/bin/python3.9 /home/pierre/Documents/Travail/pm4pierro/main.py 
+parsing log, completed traces :: 100%|██████████| 7554/7554 [00:02<00:00, 2636.74it/s]
+OPT-based SPD | method: TNC | nw0: 100 | maxiter: inf
+
+####################################################################################################
+Unfolding started at 1.5974044799804688e-05 seconds
+Unfolding ended at 25.580684423446655 seconds
+####################################################################################################
+
+####################################################################################################
+Looking for starting points (100 vectors) started at 25.58070993423462 seconds
+Looking for starting points (100 vectors) ended at 491.00185441970825 seconds
+####################################################################################################
+
+####################################################################################################
+Optimising vectors started at 491.0018730163574 seconds
+ 0// loglh / rEMD value with starting values: 11.8213089419653 / 0.5143323192630072
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 8.629933629089894 / 0.23537942853700575 in 24347.22   seconds (25   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 8.59624147205724 / 0.23890136419600408 in 2652.32    seconds (33   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 8.575486561551747 / 0.23265857458400244 in 2357.80    seconds (25   iterations)
+Optimising vectors ended at 30654.500941753387 seconds
+####################################################################################################
+
+Execution time: 30654.50097131729 seconds
+
+[True]
+
+Process finished with exit code 0
+
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+
+/usr/bin/python3.9 /home/pierre/Documents/Travail/pm4pierro/main.py 
+parsing log, completed traces :: 100%|██████████| 7554/7554 [00:02<00:00, 2648.93it/s]
+OPT-based SPD | method: Powell | nw0: 100 | maxiter: inf
+
+####################################################################################################
+Unfolding started at 1.52587890625e-05 seconds
+Unfolding ended at 25.894602060317993 seconds
+####################################################################################################
+
+####################################################################################################
+Looking for starting points (100 vectors) started at 25.89462637901306 seconds
+Looking for starting points (100 vectors) ended at 493.3695466518402 seconds
+####################################################################################################
+
+####################################################################################################
+Optimising vectors started at 493.36956429481506 seconds
+ 0// loglh / rEMD value with starting values: 12.165696530592774 / 0.5445721548970086
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 8.583377834768763 / 0.23407955159700436 in 8971.98    seconds (6    iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 8.583377812928505 / 0.23407955159700683 in 938.25     seconds (6    iterations)
+Optimising vectors ended at 10510.611840248108 seconds
+####################################################################################################
+
+Execution time: 10510.611870288849 seconds
+
+[True]
+
+Process finished with exit code 0
+
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+
+/usr/bin/python3.9 /home/pierre/Documents/Travail/pm4pierro/main.py 
+parsing log, completed traces :: 100%|██████████| 7554/7554 [00:03<00:00, 2491.76it/s]
+OPT-based SPD | method: Nelder-Mead | nw0: 100 | maxiter: inf
+
+####################################################################################################
+Unfolding started at 1.6450881958007812e-05 seconds
+Unfolding ended at 26.94844365119934 seconds
+####################################################################################################
+
+####################################################################################################
+Looking for starting points (100 vectors) started at 26.948471069335938 seconds
+Looking for starting points (100 vectors) ended at 500.12968850135803 seconds
+####################################################################################################
+
+####################################################################################################
+Optimising vectors started at 500.12970757484436 seconds
+ 0// loglh / rEMD value with starting values: 11.441343875718399 / 0.5889246802980014
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 8.597129256756178 / 0.23460048136900596 in 20826.62   seconds (3811 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 8.59712925675618 / 0.23460048136900624 in 2097.92    seconds (3811 iterations)
+Optimising vectors ended at 23534.565973997116 seconds
+####################################################################################################
+
+Execution time: 23534.566002368927 seconds
+
+[True]
+
+Process finished with exit code 0
+

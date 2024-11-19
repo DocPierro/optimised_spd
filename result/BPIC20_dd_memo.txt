@@ -1,0 +1,598 @@
+/usr/bin/python3.9 /home/pierre/Documents/Travail/pm4pierro/main.py 
+parsing log, completed traces :: 100%|██████████| 10500/10500 [00:01<00:00, 8721.95it/s]
+OPT-based SPD | method: L-BFGS-B | nw0: 100 | maxiter: inf
+
+####################################################################################################
+Unfolding started at 1.5735626220703125e-05 seconds
+Unfolding ended at 1.5808618068695068 seconds
+####################################################################################################
+
+####################################################################################################
+Looking for starting points (100 vectors) started at 1.5808818340301514 seconds
+Looking for starting points (100 vectors) ended at 4.372157335281372 seconds
+####################################################################################################
+
+####################################################################################################
+Optimising vectors started at 4.372173547744751 seconds
+47// loglh / rEMD value with starting values: 14.245014685593262 / 0.8271033000000004
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.2727826254555983 / 0.08504349590400011 in 3400.34    seconds (250  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.276668176411822 / 0.08431526077300011 in 428.60     seconds (187  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.2777454835239825 / 0.0844001814560001 in 801.39     seconds (326  iterations)
+49// loglh / rEMD value with starting values: 14.466669070367386 / 0.9458480000000015
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1740687355222423 / 0.08474167388000012 in 3611.07    seconds (270  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1795182707169185 / 0.08430113339000035 in 519.75     seconds (286  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.173644950487141 / 0.0848505094080001 in 837.69     seconds (362  iterations)
+ 4// loglh / rEMD value with starting values: 10.770139507479108 / 0.9276002969190005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1820315612306644 / 0.08473890546099999 in 3495.06    seconds (296  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1812043978570537 / 0.08476356290800036 in 549.29     seconds (295  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1786266819468945 / 0.08488020488399999 in 1233.17    seconds (594  iterations)
+95// loglh / rEMD value with starting values: 19.867876987039494 / 0.979136
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1866076501345852 / 0.084634736987 in 3491.38    seconds (296  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1899811687581545 / 0.08467846583000012 in 535.45     seconds (300  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1741704833381337 / 0.08485435107400012 in 1300.58    seconds (706  iterations)
+48// loglh / rEMD value with starting values: 14.407109412747763 / 0.9804905000000004
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.180710428471687 / 0.08452516129100036 in 3786.71    seconds (290  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1827819919153417 / 0.08449949186800033 in 533.01     seconds (286  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.178041377247555 / 0.08491187508200011 in 1353.81    seconds (855  iterations)
+50// loglh / rEMD value with starting values: 14.493228137614468 / 0.9769595000000005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.185977984712267 / 0.08472889266900022 in 3420.20    seconds (275  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.181608282472857 / 0.08478853197200036 in 540.24     seconds (298  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1785830310512724 / 0.08480382137600012 in 1813.05    seconds (946  iterations)
+ 1// loglh / rEMD value with starting values: 10.510546573426769 / 0.976565632548
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1868710915183467 / 0.0845068816410001 in 3655.97    seconds (290  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1881668578989646 / 0.08449973989900021 in 444.46     seconds (285  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.173699241296423 / 0.0848684733420006 in 1762.89    seconds (981  iterations)
+97// loglh / rEMD value with starting values: 20.144404466849938 / 0.9862539996580001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.187859905993256 / 0.08486750298600035 in 3484.78    seconds (298  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1843035571551326 / 0.08501204699500021 in 405.39     seconds (285  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1736851044449903 / 0.08489824287300035 in 2103.13    seconds (1277 iterations)
+ 0// loglh / rEMD value with starting values: 10.403535285753808 / 0.919420732511
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1788008370738887 / 0.08462902729100012 in 3684.76    seconds (286  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.184655570372558 / 0.08388432888900035 in 395.49     seconds (288  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1782057460261446 / 0.08488254446500011 in 1970.39    seconds (1257 iterations)
+96// loglh / rEMD value with starting values: 19.92637400383088 / 0.987154333359001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.191260350173774 / 0.0845902341040001 in 3702.04    seconds (301  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1845717500173736 / 0.08458588041700035 in 529.68     seconds (279  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1779660694564513 / 0.0848796083500006 in 1895.34    seconds (1231 iterations)
+ 2// loglh / rEMD value with starting values: 10.586920771465094 / 0.8176733347220005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.278409725949142 / 0.08457977570000083 in 3751.65    seconds (286  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.2788164332102343 / 0.08431802744600021 in 454.28     seconds (236  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.270341369916956 / 0.08488054286700011 in 1965.06    seconds (1222 iterations)
+98// loglh / rEMD value with starting values: 21.70021189547308 / 0.9869130000000002
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.195571542948827 / 0.08464091153400032 in 3843.74    seconds (286  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.19326093144919 / 0.0849866562020002 in 531.71     seconds (285  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1729310762989624 / 0.084865980899 in 2027.84    seconds (1444 iterations)
+51// loglh / rEMD value with starting values: 14.610132357383577 / 0.9565384990790015
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1895647180633224 / 0.08452444205000059 in 3766.70    seconds (303  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1851164841219792 / 0.084945776502 in 533.78     seconds (302  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.177658863188726 / 0.08488954173400011 in 2213.20    seconds (1611 iterations)
+ 3// loglh / rEMD value with starting values: 10.722523395194045 / 0.9753758331420002
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1860244385573386 / 0.0843676736380001 in 3688.49    seconds (281  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.186128609604847 / 0.08495541215199999 in 539.09     seconds (283  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.160878422288699 / 0.08487288035700034 in 2633.99    seconds (2162 iterations)
+99// loglh / rEMD value with starting values: 26.541108380895565 / 0.9862080000000005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1889380797572016 / 0.08493266198399999 in 3846.32    seconds (302  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.1902719859795434 / 0.08452113406600009 in 529.57     seconds (290  iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (L-BFGS-B | inf): 3.161267454547484 / 0.08487424782400012 in 2623.00    seconds (2276 iterations)
+Optimising vectors ended at 7067.510654449463 seconds
+####################################################################################################
+
+Execution time: 7067.510679960251 seconds
+
+[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
+
+Process finished with exit code 0
+
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+
+/usr/bin/python3.9 /home/pierre/Documents/Travail/pm4pierro/main.py 
+parsing log, completed traces :: 100%|██████████| 10500/10500 [00:01<00:00, 8394.38it/s]
+OPT-based SPD | method: TNC | nw0: 100 | maxiter: inf
+
+####################################################################################################
+Unfolding started at 1.3828277587890625e-05 seconds
+Unfolding ended at 1.5907185077667236 seconds
+####################################################################################################
+
+####################################################################################################
+Looking for starting points (100 vectors) started at 1.5907399654388428 seconds
+Looking for starting points (100 vectors) ended at 4.392737865447998 seconds
+####################################################################################################
+
+####################################################################################################
+Optimising vectors started at 4.392755031585693 seconds
+96// loglh / rEMD value with starting values: 19.47776768944092 / 0.9857295000000004
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.2484332053740035 / 0.1086847960690001 in 4322.35    seconds (43   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.37175874419743 / 0.09518161420700036 in 676.35     seconds (48   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.162337512695925 / 0.08484760849399998 in 805.01     seconds (60   iterations)
+48// loglh / rEMD value with starting values: 14.387515886929764 / 0.9698990000000011
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 5.2323454037338415 / 0.09117780224599999 in 4382.21    seconds (42   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.6070254050422776 / 0.10978834049300011 in 668.32     seconds (57   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.2366039207805195 / 0.0847773277170001 in 812.65     seconds (52   iterations)
+49// loglh / rEMD value with starting values: 14.44337327364989 / 0.9786955000000015
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.484802796278051 / 0.11657758982100011 in 4436.80    seconds (53   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.5092163593204315 / 0.1408317549440001 in 616.55     seconds (48   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.1729780047754628 / 0.08488038568000011 in 825.19     seconds (68   iterations)
+ 0// loglh / rEMD value with starting values: 9.589979307753246 / 0.958346065672001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.880860423747608 / 0.13051540497100061 in 4618.64    seconds (48   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.943182935607484 / 0.09602204140200012 in 541.50     seconds (41   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.1612765179167157 / 0.0848932228540006 in 740.03     seconds (73   iterations)
+99// loglh / rEMD value with starting values: 24.068685663375028 / 0.9579684999999999
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.86857823969861 / 0.31289134729799994 in 4382.13    seconds (50   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.414042292488738 / 0.1230942944450006 in 678.21     seconds (57   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.2152398153764032 / 0.08483076361100035 in 815.83     seconds (66   iterations)
+ 1// loglh / rEMD value with starting values: 10.285720932691191 / 0.9812272501660001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.685626466864535 / 0.0935324122140001 in 4466.26    seconds (46   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.625812596356727 / 0.07750831206500035 in 672.78     seconds (43   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.160881423067501 / 0.08491254155000033 in 809.50     seconds (63   iterations)
+51// loglh / rEMD value with starting values: 14.580220492166202 / 0.9856970000190003
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.749210303106362 / 0.14215685613000087 in 4534.49    seconds (49   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 6.155303347476789 / 0.2884209194350003 in 664.69     seconds (45   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.172486306979613 / 0.0845372314420006 in 734.53     seconds (67   iterations)
+ 3// loglh / rEMD value with starting values: 10.69358568108784 / 0.9809019993700001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.522571440680876 / 0.12875896552900062 in 4622.40    seconds (47   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 5.932879011443586 / 0.11267474736200009 in 623.87     seconds (42   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.160912240964274 / 0.0848403802760001 in 729.65     seconds (63   iterations)
+47// loglh / rEMD value with starting values: 14.296195041009398 / 0.9742230000000001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.878270992543527 / 0.1267241398940006 in 4642.30    seconds (41   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.738194199257431 / 0.12704583484400012 in 585.74     seconds (49   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.1781521824462136 / 0.08488951562600021 in 746.26     seconds (65   iterations)
+ 4// loglh / rEMD value with starting values: 10.778319586921281 / 0.9218123021299999
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.802666958315524 / 0.0988080333100001 in 4672.83    seconds (51   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.625800628098662 / 0.12320110970099998 in 643.26     seconds (43   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.181356114727837 / 0.08520027733700021 in 698.40     seconds (66   iterations)
+95// loglh / rEMD value with starting values: 19.316706111435675 / 0.9871466666920001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 5.133924192498752 / 0.1471245186670001 in 4664.86    seconds (42   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.178448482781765 / 0.10519426153100085 in 664.54     seconds (45   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.1638470426972134 / 0.08509121715799998 in 683.08     seconds (62   iterations)
+50// loglh / rEMD value with starting values: 14.507562725986784 / 0.9784200000000001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.753294311187655 / 0.2175869552730004 in 4795.38    seconds (50   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.580539100349352 / 0.09180377485300036 in 655.42     seconds (47   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.1608759319873285 / 0.08488143315500035 in 594.35     seconds (59   iterations)
+ 2// loglh / rEMD value with starting values: 10.361226023865726 / 0.9489775666970001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 4.743803143861366 / 0.13026817102899999 in 4712.88    seconds (44   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.2494568673257636 / 0.09500767741300059 in 665.68     seconds (42   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.1730329758503366 / 0.08487108089700059 in 691.36     seconds (68   iterations)
+98// loglh / rEMD value with starting values: 21.502219871592228 / 0.9871816666930001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 5.327326821024498 / 0.104339782661 in 4769.47    seconds (45   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 4.803687437568157 / 0.08324806246700035 in 634.42     seconds (36   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.1654667261516924 / 0.08490121728700059 in 635.71     seconds (59   iterations)
+97// loglh / rEMD value with starting values: 21.17788682649634 / 0.9858826663500001
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (TNC      | inf): 3.9098356690195537 / 0.11183120580100012 in 4730.25    seconds (49   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 6.185294286009755 / 0.4827691002070001 in 660.57     seconds (41   iterations)
+		Optimize loglh with memoization unfolding (wth derivatives):
+			loglh / rEMD value with optimized values (TNC      | inf): 3.161280069541086 / 0.08485322000300011 in 651.49     seconds (64   iterations)
+Optimising vectors ended at 6118.710422515869 seconds
+####################################################################################################
+
+Execution time: 6118.71044588089 seconds
+
+[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
+
+Process finished with exit code 0
+
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+
+/usr/bin/python3.9 /home/pierre/Documents/Travail/pm4pierro/main.py 
+parsing log, completed traces :: 100%|██████████| 10500/10500 [00:01<00:00, 9395.42it/s]
+OPT-based SPD | method: Powell | nw0: 100 | maxiter: inf
+
+####################################################################################################
+Unfolding started at 1.9788742065429688e-05 seconds
+Unfolding ended at 1.5953269004821777 seconds
+####################################################################################################
+
+####################################################################################################
+Looking for starting points (100 vectors) started at 1.5953471660614014 seconds
+Looking for starting points (100 vectors) ended at 4.336427688598633 seconds
+####################################################################################################
+
+####################################################################################################
+Optimising vectors started at 4.336443662643433 seconds
+50// loglh / rEMD value with starting values: 15.317740141951255 / 0.9850734998130003
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.277627087897816 / 0.083976930585 in 1489.41    seconds (9    iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 9.84332091757475 / 0.02349372647600011 in 1126.10    seconds (5    iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.277627087865122 / 0.08397693058500048 in 192.82     seconds (9    iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 9.770154400449437 / 0.025002945231000002 in 167.39     seconds (5    iterations)
+ 4// loglh / rEMD value with starting values: 11.543432608619263 / 0.9713802322230005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.236358964202212 / 0.08397234941200055 in 2466.40    seconds (15   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 6.8123124217025675 / 0.019614314716 in 1220.40    seconds (7    iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2363589641759227 / 0.08397234941200032 in 297.84     seconds (15   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 6.890042112543 / 0.019867256455 in 754.43     seconds (15   iterations)
+97// loglh / rEMD value with starting values: 21.651761564317937 / 0.9829403317760009
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.263063119935639 / 0.08393360637100045 in 1847.33    seconds (11   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 8.13815088930725 / 0.013959064920999999 in 2645.47    seconds (13   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.263063120775485 / 0.08393360637100045 in 279.31     seconds (11   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 8.258785354373385 / 0.018298898971 in 659.85     seconds (19   iterations)
+95// loglh / rEMD value with starting values: 20.068636695848163 / 0.9861730000000009
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.268474345866451 / 0.08389504244700022 in 1650.69    seconds (10   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 13.712784930037389 / 0.2103974234460001 in 2589.74    seconds (11   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2684743458621677 / 0.0838950424470001 in 247.44     seconds (10   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 11.600907573940004 / 0.072059100842 in 1262.05    seconds (27   iterations)
+ 2// loglh / rEMD value with starting values: 11.081426390760498 / 0.9744117823370005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.262751516890968 / 0.084029318537001 in 1656.81    seconds (10   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 6.031454265492564 / 0.020387296884000334 in 3613.05    seconds (17   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.262751516890652 / 0.084029318537001 in 205.47     seconds (10   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 6.006194113038984 / 0.02074044665 in 360.56     seconds (10   iterations)
+47// loglh / rEMD value with starting values: 14.919390648285423 / 0.9833445000000005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2760619296748468 / 0.08394743624800095 in 1534.10    seconds (9    iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 9.067218300302978 / 0.013971102653 in 4663.89    seconds (22   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.276061929690476 / 0.08394743624800072 in 152.17     seconds (9    iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 9.068264007960734 / 0.013102901989000111 in 1365.53    seconds (39   iterations)
+98// loglh / rEMD value with starting values: 21.718896460684828 / 0.9871770000240009
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2679315345055597 / 0.08391096589300022 in 1938.63    seconds (11   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 7.015971993641482 / 0.012646524141 in 4964.36    seconds (27   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.267931534508213 / 0.08391096589300023 in 167.64     seconds (11   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 6.337066340942121 / 0.016430393757000002 in 823.57     seconds (23   iterations)
+ 1// loglh / rEMD value with starting values: 10.579511870713823 / 0.9404635303590004
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.284338661918299 / 0.08408835802200056 in 1259.70    seconds (9    iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 6.22926715861882 / 0.01447898871000011 in 6111.00    seconds (34   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2843386619532327 / 0.08408835802200024 in 146.29     seconds (9    iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 6.251814664373098 / 0.015859733238 in 514.30     seconds (16   iterations)
+96// loglh / rEMD value with starting values: 20.79777857402524 / 0.9830860000000013
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2809859169192506 / 0.08402423840900011 in 1672.99    seconds (10   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 8.374822217569605 / 0.01763297328100011 in 6265.85    seconds (38   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2809859164472672 / 0.08402423840900024 in 130.37     seconds (10   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 8.591220261704803 / 0.027233003972 in 553.24     seconds (19   iterations)
+99// loglh / rEMD value with starting values: 23.47619569421833 / 0.987056000000003
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.288130221069545 / 0.08421603964700078 in 1877.63    seconds (11   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 7.97260394947886 / 0.013077618456 in 5888.93    seconds (33   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.28813022107219 / 0.08421603964700078 in 168.48     seconds (11   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 8.014945244775175 / 0.010845972122 in 697.34     seconds (24   iterations)
+ 0// loglh / rEMD value with starting values: 10.521602356427339 / 0.9520624286380013
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.246856931796064 / 0.08397705119300022 in 2571.84    seconds (16   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 5.982334143136987 / 0.016017791472 in 5596.65    seconds (35   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2468569317812306 / 0.08397705119300033 in 208.81     seconds (16   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 5.8989110618512735 / 0.01706696929700011 in 669.64     seconds (25   iterations)
+49// loglh / rEMD value with starting values: 15.250461272889055 / 0.9791775000000004
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2702937360599234 / 0.08387953527900073 in 1665.60    seconds (10   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 7.160113973926043 / 0.014576849359 in 8365.44    seconds (53   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2702937359944717 / 0.08387953527900001 in 114.71     seconds (10   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 7.09645018146853 / 0.026745459586 in 106.60     seconds (4    iterations)
+ 3// loglh / rEMD value with starting values: 11.469308416356732 / 0.9561565128840008
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2767216494520772 / 0.08392885565600024 in 1536.85    seconds (10   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 6.646497631065036 / 0.016231790251 in 8001.00    seconds (55   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2767216490781057 / 0.08392885565600024 in 113.67     seconds (10   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 6.586749018643488 / 0.015994341038 in 798.61     seconds (31   iterations)
+48// loglh / rEMD value with starting values: 15.05346964032912 / 0.9858716666060002
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.275391208889267 / 0.09002034206900024 in 1838.39    seconds (11   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 10.121063720956121 / 0.048687622874 in 7477.70    seconds (47   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.275391208876629 / 0.09002034206900024 in 129.05     seconds (11   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 9.88002289400191 / 0.013346365542 in 1189.85    seconds (46   iterations)
+51// loglh / rEMD value with starting values: 15.348829753581875 / 0.9863265000000013
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 3.26272214365495 / 0.0839797306740012 in 1962.78    seconds (11   iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Powell   | inf): 9.894392690155303 / 0.014296230063000445 in 8172.08    seconds (54   iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 3.2627221436802776 / 0.08397973067400073 in 128.00     seconds (11   iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Powell   | inf): 9.637949335088548 / 0.018239064085000003 in 974.37     seconds (42   iterations)
+Optimising vectors ended at 11271.613518476486 seconds
+####################################################################################################
+
+Execution time: 11271.613545417786 seconds
+
+[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
+
+Process finished with exit code 0
+
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+
+/usr/bin/python3.9 /home/pierre/Documents/Travail/pm4pierro/main.py 
+parsing log, completed traces :: 100%|██████████| 10500/10500 [00:01<00:00, 8619.37it/s]
+OPT-based SPD | method: Nelder-Mead | nw0: 100 | maxiter: inf
+
+####################################################################################################
+Unfolding started at 1.33514404296875e-05 seconds
+Unfolding ended at 1.5844581127166748 seconds
+####################################################################################################
+
+####################################################################################################
+Looking for starting points (100 vectors) started at 1.5844788551330566 seconds
+Looking for starting points (100 vectors) ended at 4.2227818965911865 seconds
+####################################################################################################
+
+####################################################################################################
+Optimising vectors started at 4.222798109054565 seconds
+99// loglh / rEMD value with starting values: 25.35097450386309 / 0.9871823333630004
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.780334781448701 / 0.12577504150700028 in 2031.65    seconds (7612 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 25.359051559850446 / 0.9871823333630002 in 161.85     seconds (114  iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.780334781448701 / 0.12577504150700028 in 316.07     seconds (7612 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 25.359051559850446 / 0.9871823333630002 in 39.44      seconds (114  iterations)
+98// loglh / rEMD value with starting values: 20.752522255218878 / 0.9869660000000007
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.058250892408928 / 0.11218206971700002 in 2118.14    seconds (7553 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 13.306034253314786 / 0.22969865300800027 in 1288.60    seconds (3703 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.058250892408928 / 0.11218206971700002 in 285.35     seconds (7553 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 13.306034253314786 / 0.22969865300800027 in 294.15     seconds (3704 iterations)
+ 3// loglh / rEMD value with starting values: 10.891781555271612 / 0.9011288000000015
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.81965492908382 / 0.11177983153800036 in 1819.59    seconds (7516 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.651791627098394 / 0.023136158361000005 in 1592.50    seconds (4845 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.8196549290838195 / 0.1117798315380008 in 315.11     seconds (7516 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.651791627098396 / 0.023136158361000005 in 366.78     seconds (4845 iterations)
+51// loglh / rEMD value with starting values: 15.272168310078067 / 0.9850494998930005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.104147205155192 / 0.07786524252200024 in 2085.38    seconds (7513 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.278731926833304 / 0.058998047633000796 in 1590.36    seconds (4857 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.104147205155192 / 0.07786524252200024 in 211.95     seconds (7513 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.278852351355816 / 0.058998064301000346 in 341.59     seconds (4825 iterations)
+47// loglh / rEMD value with starting values: 15.099039334099817 / 0.9800035000000012
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.6265564671206816 / 0.12467074371800053 in 1963.98    seconds (7562 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.621217712449887 / 0.03925848055000024 in 1995.85    seconds (7474 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.6265564671206825 / 0.12467074371800053 in 308.27     seconds (7562 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 16.560746106942688 / 0.6228738466590001 in 109.47     seconds (1266 iterations)
+48// loglh / rEMD value with starting values: 15.115167233395436 / 0.9850775000000009
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.5847745845484535 / 0.10607549133300051 in 2111.57    seconds (7490 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 8.478518086037615 / 0.08456136104800002 in 1808.90    seconds (6564 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.5847745845484535 / 0.10607549133300051 in 312.89     seconds (7490 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 8.478518091407524 / 0.08456136104800069 in 347.30     seconds (6564 iterations)
+97// loglh / rEMD value with starting values: 20.70801708967871 / 0.9870625000000003
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.707756896089547 / 0.09510271082800002 in 2171.66    seconds (7476 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 7.88887480774056 / 0.05289435980700024 in 1854.70    seconds (6329 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.707756896089547 / 0.09510271082800002 in 168.04     seconds (7476 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 7.88887480774056 / 0.05289435980700002 in 389.97     seconds (6329 iterations)
+95// loglh / rEMD value with starting values: 20.363489047590186 / 0.9864235000000002
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.063058233387179 / 0.08515807906600002 in 1971.20    seconds (7555 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 12.094526857046674 / 0.12220238536500003 in 2027.32    seconds (7600 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.063058233387179 / 0.08515807906600002 in 227.03     seconds (7555 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 12.094526857046674 / 0.12220238536500025 in 371.84     seconds (7600 iterations)
+49// loglh / rEMD value with starting values: 15.176797208278186 / 0.9683941980130005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.2556979331195794 / 0.1265748237720008 in 2075.09    seconds (7544 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 10.371256412005915 / 0.05782015438400035 in 2083.44    seconds (7536 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.2556979331195794 / 0.1265748237720008 in 173.93     seconds (7544 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 10.695927579424314 / 0.12582325392900026 in 325.19     seconds (6834 iterations)
+ 2// loglh / rEMD value with starting values: 10.835175131922043 / 0.9719881338050007
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.742331685582425 / 0.08364885479000025 in 2165.43    seconds (7444 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 8.744919122408755 / 0.027265408737000448 in 2011.62    seconds (6683 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.7423316855824247 / 0.08364885479000025 in 218.45     seconds (7444 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 8.744919122408756 / 0.027265408737000226 in 324.54     seconds (6683 iterations)
+ 0// loglh / rEMD value with starting values: 9.387096703059285 / 0.9371654992050015
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.562780998134805 / 0.08261827997300003 in 2166.28    seconds (7556 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.851910143356765 / 0.011199370796000224 in 2127.74    seconds (6896 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.5627809981348055 / 0.08261827997300003 in 181.17     seconds (7556 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.851910143356765 / 0.011199370796000335 in 315.36     seconds (6896 iterations)
+ 4// loglh / rEMD value with starting values: 10.892525899350375 / 0.8936207771540005
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.8104283078674857 / 0.10481139495300003 in 1959.70    seconds (7581 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 6.631432218144423 / 0.09305973666400058 in 2319.35    seconds (7486 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 3.8104283078674857 / 0.10481139495300003 in 182.35     seconds (7581 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 6.940592728443879 / 0.08970725236600056 in 334.51     seconds (7572 iterations)
+96// loglh / rEMD value with starting values: 20.579833500201968 / 0.9817935000000007
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 5.435512306590367 / 0.1049327921240007 in 2099.66    seconds (7404 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 10.446092828107204 / 0.050246815594000245 in 2132.97    seconds (7488 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 5.435512306590368 / 0.1049327921240007 in 259.20     seconds (7404 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.337619149854 / 0.03382649980600023 in 306.27     seconds (7514 iterations)
+ 1// loglh / rEMD value with starting values: 10.225506083225469 / 0.9160879677470002
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.026308146223532 / 0.09164006063800026 in 1959.45    seconds (7542 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.649169802577273 / 0.05254491953600046 in 2384.87    seconds (7474 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.026308146223532 / 0.09164006063800026 in 224.03     seconds (7542 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 9.649169802577276 / 0.05254491953600046 in 292.15     seconds (7474 iterations)
+50// loglh / rEMD value with starting values: 15.230078814775988 / 0.9867520000000002
+		Optimize loglh with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.160377124913653 / 0.11987186293300046 in 2143.76    seconds (7486 iterations)
+		Optimize rEMD with classic unfolding:
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 10.27019823717582 / 0.10098472126800002 in 2266.37    seconds (7322 iterations)
+		Optimize loglh with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 4.160377124913654 / 0.11987186293300058 in 172.03     seconds (7486 iterations)
+		Optimize rEMD with memoization unfolding (w/o derivatives):
+			loglh / rEMD value with optimized values (Nelder-Mead | inf): 10.27019823717582 / 0.10098472126800002 in 279.98     seconds (7322 iterations)
+Optimising vectors ended at 4893.080208539963 seconds
+####################################################################################################
+
+Execution time: 4893.080232381821 seconds
+
+[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
+
+Process finished with exit code 0
+

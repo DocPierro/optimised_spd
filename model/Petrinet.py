@@ -1,8 +1,11 @@
 import copy
+from queue import Queue
+
 import pm4py
 import sympy
 import xml.etree.ElementTree as et
 from pm4py.visualization.transition_system import visualizer as rg_visualizer
+from graphviz import Digraph
 
 import language.Eventlog
 
@@ -130,12 +133,35 @@ class Petrinet:
     def get_tr2lab(self):
         return self.tr2lab
 
+    def get_max_activities(self):
+        return self.max_activities
+
     def get_rg(self):
         return self.rg
 
     def set_weights(self, weights):
         for transition in self.transitions:
             transition.set_weight(weights[transition.get_name()])
+
+    def view_petri_net(self, idx, w, score):
+
+        dot = Digraph(graph_attr={'rankdir': 'LR'})
+
+        for place in self.net.places:
+            dot.node(place.name, label=place.name, shape="circle")
+        for t,transition in enumerate(self.net.transitions):
+            if transition.label is not None:
+                label = transition.label + " \n (" + str(w[t]) + ")"
+            else:
+                label = transition.name + " \n (" + str(w[t]) + ")"
+            dot.node(transition.name, label=label, shape="box")
+        for arc in self.net.arcs:
+            dot.edge(arc.source.name, arc.target.name)
+
+        dot.node("trn",label=self.name + " : " + str(score),shape="none",width="0",height="0",fontsize="20",fontcolor="red")
+        dot.edge("trn", "trn", style="invis")
+
+        dot.render(self.name + "_figure_" + str(idx), format='png', view=True)
 
     def __str__(self):
         if self.net is not None:
@@ -232,7 +258,7 @@ class Petrinet:
             pn_language.append(
                 language.Eventlog.Trace(i, "".join([transition.get_label() for transition in firing_sequence]), None,
                                         probabilities[i], None))
-        pn_language.append(language.Eventlog.Trace(len(pn_language), "", 0, 0, -1))
+        pn_language.append(language.Eventlog.Trace(len(pn_language), "", (), 0, 0, -1))
         return pn_language
 
     def build_eqs(self, max_mass):
@@ -262,10 +288,67 @@ class Petrinet:
 
     ####################################################################################################
 
+    def compute_rg(self, weights):
+        for transition in self.rg.transitions:
+            denom = 0
+            for enabled_transition in transition.from_state.outgoing:
+                denom += weights[enabled_transition.name]
+            # use property data to memorize prob
+            transition.data = weights[transition.name] / denom
+
+    def unfold_rg(self, ev, weights):
+
+        self.compute_rg(weights)
+        ev_language = ev.get_language_pm4py()
+        max_length = max([len(trace.get_seq()) for trace in ev.get_language()])
+        prefixes = ev.get_prefixes()
+
+        # find initial state in the reachability graph
+        init_state = None
+        for state in self.rg.states:
+            if state.name == 'start1':
+                init_state = state
+
+        q = Queue(0)
+        q.put((init_state, [], 0))
+
+        triples = {}
+        triples[(init_state, tuple([]), 0)] = 1
+
+        traces = {}  # all traces that arrives to sink
+        while not q.empty():
+            state, trace, level = q.get()
+            prob = triples[(state, tuple(trace), level)]
+            if len(state.outgoing) > 0:
+                for transition in state.outgoing:
+                    new_state = transition.to_state
+                    new_trace = trace.copy()
+                    label = self.get_tr2lab()[transition.name]
+                    if label is not None:
+                        new_trace.append(label)
+                    if len(new_trace) <= max_length:
+                        if tuple(new_trace) in prefixes:
+                            new_prob = prob * transition.data
+                            key = (new_state, tuple(new_trace), level + 1)
+                            if key not in triples:
+                                triples[key] = new_prob
+                                q.put((new_state, new_trace, level + 1))
+                            else:
+                                triples[key] = triples[key] + new_prob
+            else:
+                tt = tuple(trace)
+                if tt in ev_language:
+                    if tt not in traces:
+                        traces[tt] = prob
+                    else:
+                        traces[tt] = traces[tt] + prob
+
+        return traces
+
+    ####################################################################################################
+
     def export_pnml(self, filename, weights):
-
         pm4py.write_pnml(self.net, self.im, self.fm, "gspn/" + filename)
-
         tree, t = et.parse("gspn/" + filename + ".pnml"), 0
         root = tree.getroot()
         for node in root[0][1]:
