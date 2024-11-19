@@ -5,7 +5,7 @@ This repository hosts the implementation of the methodology outlined in the pape
 ## Contents
 **Scripts:** Contains the necessary scripts to execute an optimized search of weight parameters for stochastic Petri net mining.<br/>
 &emsp; ***language/Eventlog*** contains the necessary to import and manipulate an eventlog.<br/>
-&emsp; ***model/Petrinet*** contains the necessary to work with a sctochastic and non-stochastic Petri net.<br/>
+&emsp; ***model/Petrinet*** contains the necessary to work with a stochastic and non-stochastic Petri net.<br/>
 &emsp; ***cal/estimators*** contains a simple re-implementation of the ***Burke, A, Leemans, S.J.J and Wynn, M. T. (2021) - Stochastic Process Discovery By Weight Estimation*** estimators compatible with our object:<br/>
 &emsp; ***cal/Optimizer*** contains the implementation of the optimized weights search.<br/>
 
@@ -16,6 +16,7 @@ This repository hosts the implementation of the methodology outlined in the pape
 &emsp; ***rl_data/BPIC17_offerlog.xes*** -> [https://data.4tu.nl/datasets/cc497753-1175-41f6-a107-425787c54266](https://data.4tu.nl/datasets/cc497753-1175-41f6-a107-425787c54266)<br/>
 &emsp; ***rl_data/BPIC20_dd.xes*** -> [https://data.4tu.nl/datasets/6a0a26d2-82d0-4018-b1cd-89afb0e8627f](https://data.4tu.nl/datasets/6a0a26d2-82d0-4018-b1cd-89afb0e8627f)<br/>
 &emsp; ***rl_data/BPIC20_rfp.xes*** -> [https://data.4tu.nl/datasets/a6f651a7-5ce0-4bc6-8be1-a7747effa1cc](https://data.4tu.nl/datasets/a6f651a7-5ce0-4bc6-8be1-a7747effa1cc)<br/>
+Data are stored in the rl_data.zip and have to be unzipped for use.
 
 **Results:** Presents the outcome of a series of tests as outlined in the associated paper.<br/>
 &emsp; ***result***: Contains the series of results obtained from running the optimizer on logs with different unfolding techniques, including computation time and metrics values.<br/>
